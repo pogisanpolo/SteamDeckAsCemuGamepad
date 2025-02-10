@@ -82,7 +82,7 @@ By default, once an Apollo stream starts, all of the host's audio is captured by
 Make sure your Steam Deck and your host are on the same network.
 
 ### Motion controls used to work, but don't work anymore.
-It's possible your Steam Deck's IP address has changed.
+It's possible your Steam Deck's IP address has changed. We're going to remove the DSUController we've set up, and replace it with a new one with your Deck's new IP address.
 
 1. Go to Options > Input settings
 2. Under the Controller dropdown, select the DSUController, then click on -.
