@@ -74,7 +74,7 @@ By default, once a stream starts, all of the host's audio is captured by the Ste
 1. Start Cemu
 2. Ensure that in Options, Separate GamePad view is checked.
 3. On your Steam Deck, start Moonlight, then start either the Cemu application we set up earlier, or the Virtual Desktop app. This should create a virtual second monitor.
-4. Find the GamePad view window, then drag it over to the second monitor. Then maximize it.
+4. Find the GamePad view window, then drag it over to the second monitor. Then maximize it. If this is your first time using a second monitor, drag the window past the right side of your screen. It should "overflow" into the second monitor, which should be showing on the Steam Deck.
 5. Start your game. Once your game has loaded, click on the GamePad view window, then press Alt + Enter to set it to full screen.
 6. Click the main emulator window on your main monitor, then press Alt + Enter to put that in full screen too.
 
@@ -82,9 +82,16 @@ By default, once a stream starts, all of the host's audio is captured by the Ste
 ### Cemu can't detect any controllers when setting up the DSUController.
 Make sure your Steam Deck and your host are on the same network.
 
+### My Steam Deck is simply duplicating the same screen, and I've checked "Always use Virtual Display".
+It's possible your OS has set your second monitor to duplicate. On Windows, the Windows + P button combination should show the possible display settings. Make sure it's set to "Extend" if it's currently set to Duplicate.
+
+If the chosen option is "PC screen only", the virtual display settings may not have been saved, or you've chosen the wrong app in Moonlight. Make sure that you click on Save after checking "Always use Virtual Display", and you've selected the correct app in Moonlight.
+
+If both are true, it may be an issue with Apollo itself, in which case, reach out to the developer for further assistance.
+
 ### Motion controls used to work, but don't work anymore.
-It's possible your Steam Deck's IP address has changed. We're going to remove the DSUController we've set up, and replace it with a new one with your Deck's new IP address.
+If you have not set a static IP address on your Steam Deck, possible it's IP address has changed. We're going to remove the DSUController we've set up, and replace it with a new one with your Deck's new IP address.
 
 1. Go to Options > Input settings
 2. Under the Controller dropdown, select the DSUController, then click on -.
-3. Perform the [Get your Steam Deck's IP Address](https://github.com/pogisanpolo/SteamDeckAsCemuGamepad?tab=readme-ov-file#get-your-steam-decks-ip-address), and [Set up motion controls steps](https://github.com/pogisanpolo/SteamDeckAsCemuGamepad?tab=readme-ov-file#set-up-motion-controls) again.
+3. Perform the [Get your Steam Deck's IP Address](https://github.com/pogisanpolo/SteamDeckAsCemuGamepad?tab=readme-ov-file#get-your-steam-decks-ip-address), and [Set up motion controls steps](https://github.com/pogisanpolo/SteamDeckAsCemuGamepad?tab=readme-ov-file#set-up-motion-controls) again. You shouldn't need to set up the rest of the Moonlight controls again.
