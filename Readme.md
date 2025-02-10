@@ -1,5 +1,7 @@
 # Steam Deck As Gamepad For A Desktop Cemu Host
-This writeup assumes you're running Cemu on your Desktop PC, with your Steam Deck acting as a GamePad for it. It should work for any Cemu host that can support Apollo.
+![image](https://github.com/user-attachments/assets/8c7106e3-739d-426e-8ec9-5416ade554fb)
+
+Inspired by this [question](https://www.reddit.com/r/cemu/comments/1i4s8os/comment/mbz0jo7/), this writeup assumes you're running Cemu on your Desktop PC, with your Steam Deck acting as a GamePad for it. It should work for any Cemu host that can support Apollo.
 
 ## Host Requirements:
 - [Apollo](https://github.com/ClassicOldSong/Apollo), a fork of Sunshine, is the easiest way to set up a virtual second monitor for game streaming for your host. The virtual display allows us to use a dedicated full screen display for the game pad. If you already have a second physical monitor, or have some sort of virtual display solution already set up, you may use Sunshine, or whatever streaming solution you prefer.
