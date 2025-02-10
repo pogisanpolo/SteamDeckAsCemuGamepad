@@ -69,7 +69,7 @@ By default, once an Apollo stream starts, all of the host's audio is captured by
 4. Under the TV section, in the Device dropdown menu, select your PC's speakers.
 5. Under the Gamepad section, in the Device dropdown menu, select "Speakers (Steam Streaming Speakers)".
 
-## Putting it all together.
+## Starting a Game.
 1. Start Cemu
 2. Ensure that in Options, Separate GamePad view is checked.
 3. On your Steam Deck, start Moonlight, then start either the Cemu application we set up earlier, or the Virtual Desktop app. This should create a virtual second monitor.
