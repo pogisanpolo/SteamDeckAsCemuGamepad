@@ -67,3 +67,19 @@ By default, once an Apollo stream starts, all of the host's audio is captured by
 3. Go to the Audio tab.
 4. Under the TV section, in the Device dropdown menu, select your PC's speakers.
 5. Under the Gamepad section, in the Device dropdown menu, select "Speakers (Steam Streaming Speakers)".
+
+## Putting it all together.
+1. Start Cemu
+2. Ensure that in Options, Separate GamePad view is checked.
+3. On your Steam Deck, start Moonlight, then start either the Cemu application we set up earlier, or the Virtual Desktop app. This should create a virtual second monitor.
+4. Find the GamePad view window, then drag it over to the second monitor. Then maximize it.
+5. Start your game. Once your game has loaded, click on the GamePad view window, then press Alt + Enter to set it to full screen.
+6. Click the main emulator window on your main monitor, then press Alt + Enter to put that in full screen too.
+
+## Troubleshooting
+### Motion controls used to work, but don't work anymore.
+It's possible your Steam Deck's IP address has changed.
+
+1. Go to Options > Input settings
+2. Under the Controller dropdown, select the DSUController, then click on -.
+3. Perform the [Get your Steam Deck's IP Address](https://github.com/pogisanpolo/SteamDeckAsCemuGamepad/edit/main/Readme.md#set-up-motion-controls), and [Set up motion controls](https://github.com/pogisanpolo/SteamDeckAsCemuGamepad/edit/main/Readme.md#set-up-motion-controls) steps again.
