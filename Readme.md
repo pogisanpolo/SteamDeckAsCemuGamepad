@@ -28,7 +28,7 @@ Inspired by this [question](https://www.reddit.com/r/cemu/comments/1i4s8os/comme
 ### Get your Steam Deck's IP Address
 Optional: Give your Steam Deck a static IP address. The exact procedure will not be discussed here since it will depend on your home network's setup and your router. Doing this means setting up motion controls only needs to be done once.
 
-Get your Steam Deck's IP address by going to "Settings > Internet > Connection Status". Make not of this when setting up motion controls.
+Get your Steam Deck's IP address by going to "Settings > Internet > Connection Status". Make note of this when setting up motion controls.
 
 ## Host setup
 Make sure all other game controllers are disconnected to simplify the following steps. You may get unexpected results if other controllers are connected. These steps assume an otherwise default setup for Apollo and Moonlight.
