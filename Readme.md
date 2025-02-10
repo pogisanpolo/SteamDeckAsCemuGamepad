@@ -1,8 +1,8 @@
 # Steam Deck As Gamepad For A Desktop Cemu Host
-This writeup assumes you're running Cemu on your Desktop PC with one physical monitor, with your Steam Deck acting as a GamePad for it. It should work for any Cemu host that can support Apollo.
+This writeup assumes you're running Cemu on your Desktop PC, with your Steam Deck acting as a GamePad for it. It should work for any Cemu host that can support Apollo.
 
 ## Host Requirements:
-- [Apollo](https://github.com/ClassicOldSong/Apollo), a fork of Sunshine, is the easiest way to set up a virtual monitor for game streaming for your host. The virtual display allows us to use a dedicated full screen display for the game pad. If you already have a second physical monitor, or have some sort of virtual display solution already set up, you may use Sunshine, or whatever streaming solution you prefer.
+- [Apollo](https://github.com/ClassicOldSong/Apollo), a fork of Sunshine, is the easiest way to set up a virtual second monitor for game streaming for your host. The virtual display allows us to use a dedicated full screen display for the game pad. If you already have a second physical monitor, or have some sort of virtual display solution already set up, you may use Sunshine, or whatever streaming solution you prefer.
 
 ## Steam Deck Requirements
 - [Moonlight](https://github.com/moonlight-stream/moonlight-qt/releases) is the only choice for Steam Deck as of this time of writing. The easiest way is to use the Discover Store in Desktop Mode to install it.
@@ -12,6 +12,7 @@ This writeup assumes you're running Cemu on your Desktop PC with one physical mo
 - Ideally, you'd use [Artemis](https://github.com/ClassicOldSong/moonlight-android), a fork of Moonlight that's specifically designed to work with Apollo, as your client, but this is currently unsupported for Linux, and therefore the Steam Deck. Keep an eye on this, or if you want to try and set it up for your Android device. Setting up motion controls for those, however, is beyond the scope of this writeup.
 
 ## Optional: Set up a new application in Apollo
+If you already have a second physical monitor, you can skip this step.
 1. Sign in to your Apollo dashboard.
 2. Go to Applications
 3. Click on Add New.
@@ -29,8 +30,7 @@ This writeup assumes you're running Cemu on your Desktop PC with one physical mo
 ### Get your Steam Deck's IP Address
 Optional: Give your Steam Deck a static IP address. The exact procedure will not be discussed here since it will depend on your home network's setup and your router. Doing this means setting up motion controls only needs to be done once.
 
-1. Get your Steam Deck's IP address by going to "Settings > Internet > Connection Status". Make not of this when setting up motion controls.
-2. Start Moonlight, then start a stream to your host.
+Get your Steam Deck's IP address by going to "Settings > Internet > Connection Status". Make not of this when setting up motion controls.
 
 ## Host setup
 Make sure all other game controllers are disconnected to simplify the following steps. You may get unexpected results if other controllers are connected. These steps assume an otherwise default setup for Apollo and Moonlight.
@@ -38,6 +38,7 @@ Make sure all other game controllers are disconnected to simplify the following 
 ### Set up motion controls
 The goal is to set up Cemu to use the Steam Deck's DSU server (courtesy of Steam Gyro DSU) to supply motion data that Cemu can use. If you've set up a static IP for your Steam Deck, this means these steps should only need to be done once.
 
+1. On your Steam Deck, start Moonlight, then start a stream to your host.
 1. Start Cemu.
 2. Go to Options > Input settings
 3. On Emulated controller, select Wii U Gamepad
