@@ -7,20 +7,16 @@ Inspired by this [question](https://www.reddit.com/r/cemu/comments/1i4s8os/comme
 - [Apollo](https://github.com/ClassicOldSong/Apollo), a fork of Sunshine, is the easiest way to set up a virtual second monitor for game streaming for your host. The virtual display allows us to use a dedicated full screen display for the game pad. If you already have a second physical monitor, or have some sort of virtual display solution already set up, you may use Sunshine, or whatever streaming solution you prefer.
 
 ## Steam Deck Requirements
-- [Moonlight](https://github.com/moonlight-stream/moonlight-qt/releases) is the only choice for Steam Deck as of this time of writing. The easiest way is to use the Discover Store in Desktop Mode to install it.
+- [Moonlight](https://github.com/moonlight-stream/moonlight-qt/releases) is the only choice for Steam Deck as of this time of writing since Artemis isn't on Linux yet. The easiest way is to use the Discover Store in Desktop Mode to install it.
 - [Steam Gyro DSU](https://github.com/kmicki/SteamDeckGyroDSU) is required to capture motion data from the deck directly.
 
-### Added Note:
-- Ideally, you'd use [Artemis](https://github.com/ClassicOldSong/moonlight-android), a fork of Moonlight that's specifically designed to work with Apollo, as your client, but this is currently unsupported for Linux, and therefore the Steam Deck. Keep an eye on this, or if you want to try and set it up for your Android device. Setting up motion controls for those, however, is beyond the scope of this writeup.
-
 ## Optional: Set up a new application in Apollo
-If you already have a second physical monitor, you can skip this step.
 1. Sign in to your Apollo dashboard.
 2. Go to Applications
 3. Click on Add New.
 4. Under Application Name, set it to "Cemu", without the quotes.
 5. Under Command, put in the path to Cemu's executable. If your path to it has spaces, enclose it with quotes.
-6. Check "Always use Virtual Display".
+6.  If you already have a second physical monitor, you can skip this step. Check "Always use Virtual Display".
 7. Click on Save.
 
 ## Client Setup
