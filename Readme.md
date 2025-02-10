@@ -61,7 +61,7 @@ These steps should only need to be done once.
 8. Click on the dropdown menu next to Controller, and make sure that both DSUController and XInput are listed. Cemu will make use of both "controllers" simultaneously for your selected controller.
 
 ### Set up Gamepad audio.
-By default, once an Apollo stream starts, all of the host's audio is captured by the Steam Streaming Speakers. The goal is to force Cemu output the "TV" audio to your host's speaker's, while only the gamepad audio is captured by the virtual speakers. Note that I have not tested the microphone functionality.
+By default, once an Apollo stream starts, all of the host's audio is captured by the Steam Streaming Speakers. The goal is to force Cemu to output the "TV" audio to your host's speaker's instead of whatever is currently set to default, while only the gamepad audio is captured by the virtual speakers. Note that I have not tested the microphone functionality.
 
 1. Start Cemu
 2. Go to Options > General settings
