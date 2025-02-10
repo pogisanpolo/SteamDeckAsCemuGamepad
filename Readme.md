@@ -82,4 +82,4 @@ It's possible your Steam Deck's IP address has changed.
 
 1. Go to Options > Input settings
 2. Under the Controller dropdown, select the DSUController, then click on -.
-3. Perform the [Get your Steam Deck's IP Address](https://github.com/pogisanpolo/SteamDeckAsCemuGamepad?tab=readme-ov-file#troubleshooting), and [Set up motion controls steps](https://github.com/pogisanpolo/SteamDeckAsCemuGamepad?tab=readme-ov-file#set-up-motion-controls) again.
+3. Perform the [Get your Steam Deck's IP Address](https://github.com/pogisanpolo/SteamDeckAsCemuGamepad?tab=readme-ov-file#get-your-steam-decks-ip-address), and [Set up motion controls steps](https://github.com/pogisanpolo/SteamDeckAsCemuGamepad?tab=readme-ov-file#set-up-motion-controls) again.
