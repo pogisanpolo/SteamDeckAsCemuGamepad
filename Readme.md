@@ -36,17 +36,18 @@ Make sure all other game controllers are disconnected to simplify the following 
 ### Set up motion controls
 The goal is to set up Cemu to use the Steam Deck's DSU server (courtesy of Steam Gyro DSU) to supply motion data that Cemu can use. If you've set up a static IP for your Steam Deck, these steps should only need to be done once.
 
-1. Start Cemu.
-2. Go to Options > Input settings
-3. On Emulated controller, select Wii U Gamepad
-4. In Controller, click on +.
-5. In the new window that appears: On API, select DSUController. Don't worry about the Controller option yet.
-6. In IP, use the IP address set in the previous step. Leave the port as is.
-7. In Controller, select your controller. If it says "Searching for controllers...", you may need to wait for a few seconds for it to show.
-8. Click on Add.
-9. Make sure under Controller, the newly added DSUController is selected.
-10. Click on Settings
-11. Check Use motion, then click on OK.
+1. On your Steam Deck, start Moonlight, then start a stream.
+2. Start Cemu.
+3. Go to Options > Input settings
+4. On Emulated controller, select Wii U Gamepad
+5. In Controller, click on +.
+6. In the new window that appears: On API, select DSUController. Don't worry about the Controller option yet.
+7. In IP, use the IP address set in the previous step. Leave the port as is.
+8. In Controller, select your controller. If it says "Searching for controllers...", you may need to wait for a few seconds for it to show.
+9. Click on Add.
+10. Make sure under Controller, the newly added DSUController is selected.
+11. Click on Settings
+12. Check Use motion, then click on OK.
 
 ### Set up Moonlight controls.
 These steps should only need to be done once.
