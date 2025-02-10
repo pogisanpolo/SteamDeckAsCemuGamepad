@@ -34,7 +34,7 @@ Get your Steam Deck's IP address by going to "Settings > Internet > Connection S
 Make sure all other game controllers are disconnected to simplify the following steps. You may get unexpected results if other controllers are connected. These steps assume an otherwise default setup for Apollo and Moonlight.
 
 ### Set up motion controls
-The goal is to set up Cemu to use the Steam Deck's DSU server (courtesy of Steam Gyro DSU) to supply motion data that Cemu can use. If you've set up a static IP for your Steam Deck, this means these steps should only need to be done once.
+The goal is to set up Cemu to use the Steam Deck's DSU server (courtesy of Steam Gyro DSU) to supply motion data that Cemu can use. If you've set up a static IP for your Steam Deck, these steps should only need to be done once.
 
 1. On your Steam Deck, start Moonlight, then start a stream to your host.
 1. Start Cemu.
