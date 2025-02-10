@@ -1,7 +1,10 @@
-# Steam Deck as Gamepad for Cemu
+# Steam Deck As Gamepad For A Desktop Cemu Host
+This writeup assumes you're running Cemu on your Desktop PC with one physical monitor, with your Steam Deck acting as a GamePad for it. It should work for any Cemu host that can support Apollo.
 
-## Requirements:
-- [Apollo](https://github.com/ClassicOldSong/Apollo), a fork of Sunshine, is the easiest way to set up a virtual monitor for game streaming for your host. The virtual display allows us to use a dedicated full screen display for the game pad. If you already have a second physical monitor, or have some sort of virtual display solution already set up, you may use Sunshine, or whatever streaming solution you prefer. 
+## Host Requirements:
+- [Apollo](https://github.com/ClassicOldSong/Apollo), a fork of Sunshine, is the easiest way to set up a virtual monitor for game streaming for your host. The virtual display allows us to use a dedicated full screen display for the game pad. If you already have a second physical monitor, or have some sort of virtual display solution already set up, you may use Sunshine, or whatever streaming solution you prefer.
+
+## Steam Deck Requirements
 - [Moonlight](https://github.com/moonlight-stream/moonlight-qt/releases) is the only choice for Steam Deck as of this time of writing. The easiest way is to use the Discover Store in Desktop Mode to install it.
 - [Steam Gyro DSU](https://github.com/kmicki/SteamDeckGyroDSU) is required to capture motion data from the deck directly.
 
