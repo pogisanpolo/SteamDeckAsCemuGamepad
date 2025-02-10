@@ -19,7 +19,7 @@ Inspired by this [question](https://www.reddit.com/r/cemu/comments/1i4s8os/comme
 6.  If you already have a second physical monitor, you can skip this step. Check "Always use Virtual Display".
 7. Click on Save.
 
-## Client Setup
+## Steam Deck Setup
 ### Moonlight Setup
 1. Open Moonlight on the Steam Deck.
 2. Go to Settings (tap the gear icon near the upper right corner).
