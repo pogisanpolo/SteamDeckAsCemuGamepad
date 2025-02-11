@@ -86,8 +86,9 @@ By default, once a stream starts, all of the host's audio is captured by the Ste
     - Pick the Desktop app if you already have a second physical monitor.
 2. Start Cemu if you didn't do so already in step 1. Ensure that in Options, Separate GamePad view is checked.
 3. Find the GamePad view window, then drag it over to the second monitor. Then maximize it. If this is your first time using a second monitor, drag the window past the right side of your screen. It should "overflow" into the second monitor, which should be showing on the Steam Deck.
-4. Start your game. Once your game has loaded, click on the GamePad view window, then press Alt + Enter to set it to full screen.
-5. Click the main emulator window on your main monitor, then press Alt + Enter to put that in full screen too.
+4. Start your game.
+5. (Optional) Once your game has loaded, click on the GamePad view window, then press Alt + Enter to set it to full screen.
+6. (Optional) Click the main emulator window on your main monitor, then press Alt + Enter to put that in full screen too.
 
 ## Troubleshooting
 ### Cemu can't detect any controllers when setting up the DSUController.
