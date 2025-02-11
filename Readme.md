@@ -10,7 +10,7 @@ Inspired by this [question](https://www.reddit.com/r/cemu/comments/1i4s8os/comme
 
 # What's not supported
 - GamePad camera. The Deck doesn't have a built-in camera, and even if it did, it doesn't look like Cemu supports GamePad camera input yet anyway.
-- Microphone. Moonlight currently doesn't have microphone passthrough. You'll have to use your hosts' mic instead.
+- GamePad Microphone. Moonlight currently doesn't have microphone passthrough. You'll need to have a separate microphone device on your host instead.
 
 ## Host Requirements:
 - [Apollo](https://github.com/ClassicOldSong/Apollo), a fork of Sunshine, is the easiest way to set up a virtual second monitor for game streaming for your host. The virtual display allows us to use a dedicated full screen display for the game pad. If you already have a second physical monitor, or have some sort of virtual display solution already set up, you may use Sunshine, or whatever streaming solution you prefer.
@@ -19,13 +19,13 @@ Inspired by this [question](https://www.reddit.com/r/cemu/comments/1i4s8os/comme
 - [Moonlight](https://github.com/moonlight-stream/moonlight-qt/releases) is the only choice for Steam Deck as of this time of writing since Artemis isn't on Linux yet. The easiest way is to use the Discover Store in Desktop Mode to install it.
 - [Steam Gyro DSU](https://github.com/kmicki/SteamDeckGyroDSU) is required to capture motion data from the deck directly.
 
-## Optional: Set up a new application in Apollo
+## Optional: Set up a Cemu shortcut in Apollo
 1. Sign in to your Apollo dashboard.
 2. Go to Applications
 3. Click on Add New.
 4. Under Application Name, set it to "Cemu", without the quotes.
 5. Under Command, put in the path to Cemu's executable. If your path to it has spaces, enclose it with quotes.
-6.  If you already have a second physical monitor, you can skip this step. Check "Always use Virtual Display".
+6. Check "Always use Virtual Display". If you already have a second physical monitor, you can skip this step. 
 7. Click on Save.
 
 ## Steam Deck Setup
@@ -80,12 +80,14 @@ By default, once a stream starts, all of the host's audio is captured by the Ste
 5. Under the Gamepad section, in the Device dropdown menu, select "Speakers (Steam Streaming Speakers)".
 
 ## Starting a Game.
-1. Start Cemu
-2. Ensure that in Options, Separate GamePad view is checked.
-3. On your Steam Deck, start Moonlight, then start either the Cemu application we set up earlier, or the Virtual Desktop app. This should create a virtual second monitor.
-4. Find the GamePad view window, then drag it over to the second monitor. Then maximize it. If this is your first time using a second monitor, drag the window past the right side of your screen. It should "overflow" into the second monitor, which should be showing on the Steam Deck.
-5. Start your game. Once your game has loaded, click on the GamePad view window, then press Alt + Enter to set it to full screen.
-6. Click the main emulator window on your main monitor, then press Alt + Enter to put that in full screen too.
+1. Start Moonlight on your Steam Deck, and either:
+    - Pick the Cemu app if you set up the Cemu shortcut in Apollo earlier. This should start a stream and start Cemu at the same time, and possibly start a second virtual monitor.
+    - Pick the Virtual Desktop app if you did not set up the Cemu app in Apollo, and don't have a second physical monitor. This will create a virtual second monitor.
+    - Pick the Desktop app if you already have a second physical monitor.
+2. Start Cemu if you didn't do so already in step 1. Ensure that in Options, Separate GamePad view is checked.
+3. Find the GamePad view window, then drag it over to the second monitor. Then maximize it. If this is your first time using a second monitor, drag the window past the right side of your screen. It should "overflow" into the second monitor, which should be showing on the Steam Deck.
+4. Start your game. Once your game has loaded, click on the GamePad view window, then press Alt + Enter to set it to full screen.
+5. Click the main emulator window on your main monitor, then press Alt + Enter to put that in full screen too.
 
 ## Troubleshooting
 ### Cemu can't detect any controllers when setting up the DSUController.
