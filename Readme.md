@@ -13,11 +13,11 @@ Inspired by this [question](https://www.reddit.com/r/cemu/comments/1i4s8os/comme
 - GamePad Microphone. Moonlight currently doesn't have microphone passthrough. You'll need to have a separate microphone device on your host instead.
 
 ## Host Requirements:
-- [Apollo](https://github.com/ClassicOldSong/Apollo), a fork of Sunshine, is the easiest way to set up a virtual second monitor for game streaming for your host. The virtual display allows us to use a dedicated full screen display for the game pad. If you already have a second physical monitor, or have some sort of virtual display solution already set up, you may use Sunshine, or whatever streaming solution you prefer.
+- [Apollo](https://github.com/ClassicOldSong/Apollo), a fork of Sunshine, is the easiest way to set up a virtual second monitor for streaming the GamePad from your host. The virtual display allows us to use a dedicated full screen display for the GamePad. If you already have a second physical monitor, or have some sort of virtual display solution already set up, you may use whatever streaming solution you prefer.
 
 ## Steam Deck Requirements
 - [Moonlight](https://github.com/moonlight-stream/moonlight-qt/releases) is the only choice for Steam Deck as of this time of writing since Artemis isn't on Linux yet. The easiest way is to use the Discover Store in Desktop Mode to install it.
-- [Steam Gyro DSU](https://github.com/kmicki/SteamDeckGyroDSU) is required to capture motion data from the deck directly.
+- [SteamDeckGyroDSU](https://github.com/kmicki/SteamDeckGyroDSU) is required to capture motion data from the Steam Deck, since the underlying streaming protocol used by Apollo doesn't transmit motion data.
 
 ## Optional: Set up a Cemu shortcut in Apollo
 1. Sign in to your Apollo dashboard.
@@ -43,7 +43,7 @@ Get your Steam Deck's IP address by going to "Settings > Internet > Connection S
 Make sure all other game controllers are disconnected to simplify the following steps. You may get unexpected results if other controllers are connected. These steps assume an otherwise default setup for Apollo and Moonlight.
 
 ### Set up motion controls
-The goal is to set up Cemu to use the Steam Deck's DSU server (courtesy of Steam Gyro DSU) to supply motion data that Cemu can use. If you've set up a static IP for your Steam Deck, these steps should only need to be done once.
+The goal is to set up Cemu to use the Steam Deck's DSU server (from SteamDeckGyroDSU) to supply motion data that Cemu can use. If you've set up a static IP for your Steam Deck, these steps should only need to be done once.
 
 1. On your Steam Deck, start Moonlight, then start a stream.
 2. Start Cemu.
@@ -71,7 +71,7 @@ These steps should only need to be done once.
 8. Click on the dropdown menu next to Controller, and make sure that both DSUController and XInput are listed. Cemu will make use of both "controllers" simultaneously for your selected controller.
 
 ### Set up Gamepad audio.
-By default, once a stream starts, all of the host's audio is captured by the Steam Streaming Speakers, which is then forwarded to the Deck, while muting it's output on the host side. The goal is to force Cemu to output the "TV" audio to your host's speaker's, while only the GamePad audio is captured by the virtual speakers. Note that I have not tested the microphone functionality.
+By default, once a stream starts, all of the host's audio is captured by the Steam Streaming Speakers, which is then forwarded to the Deck, while muting it's output on the host side. The goal is to force Cemu to output the "TV" audio to your host's speaker's, while only the GamePad audio is captured by the virtual speakers.
 
 1. Start Cemu
 2. Go to Options > General settings
@@ -80,6 +80,8 @@ By default, once a stream starts, all of the host's audio is captured by the Ste
 5. Under the Gamepad section, in the Device dropdown menu, select "Speakers (Steam Streaming Speakers)".
 
 ## Starting a Game.
+The goal is to put the GamePad window into the monitor your Steam Deck is streaming, while the main Cemu window goes to the host's primary monitor.
+
 1. Start Moonlight on your Steam Deck, and either:
     - Pick the Cemu app if you set up the Cemu shortcut in Apollo earlier. This should start a stream and start Cemu at the same time, and possibly start a second virtual monitor.
     - Pick the Virtual Desktop app if you did not set up the Cemu app in Apollo, and don't have a second physical monitor. This will create a virtual second monitor.
