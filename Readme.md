@@ -71,16 +71,16 @@ These steps should only need to be done once.
 8. Click on the dropdown menu next to Controller, and make sure that both DSUController and XInput are listed. Cemu will make use of both "controllers" simultaneously for your selected controller.
 
 ### Set up Gamepad audio.
-By default, once a stream starts, all of the host's audio is captured by the Steam Streaming Speakers, which is then forwarded to the Deck, while muting it's output on the host side. The goal is to force Cemu to output the "TV" audio to your host's speaker's, while only the GamePad audio is captured by the virtual speakers.
+By default, once a stream starts, all of the host's audio is captured by the Steam Streaming Speakers, which is then forwarded to the Deck, while muting it's output on the host side. The goal is to force Cemu to output the "TV" audio to your preferred speaker's, while only the GamePad audio is captured by the virtual speakers. 
 
 1. Start Cemu
 2. Go to Options > General settings
 3. Go to the Audio tab.
-4. Under the TV section, in the Device dropdown menu, select your PC's speakers.
+4. Under the TV section, in the Device dropdown menu, select your desired speakers.
 5. Under the Gamepad section, in the Device dropdown menu, select "Speakers (Steam Streaming Speakers)".
 
 ## Starting a Game.
-The goal is to put the GamePad window into the monitor your Steam Deck is streaming, while the main Cemu window goes to the host's primary monitor.
+When I refer to the "second monitor" for these instructions, I'm referring to whatever monitor your Steam Deck is streaming from. If you have an unusual setup such as having a second physical monitor that you intend to use as your Wii U TV display for some reason or another, adapt these instructions for your setup accordingly.
 
 1. Start Moonlight on your Steam Deck, and either:
     - Pick the Cemu app if you set up the Cemu shortcut in Apollo earlier. This should start a stream and start Cemu at the same time, and possibly start a second virtual monitor.
