@@ -1,7 +1,7 @@
 # Steam Deck As Gamepad For A Desktop Cemu Host
 ![image](https://github.com/user-attachments/assets/8c7106e3-739d-426e-8ec9-5416ade554fb)
 
-Inspired by this [question](https://www.reddit.com/r/cemu/comments/1i4s8os/comment/mbz0jo7/), this writeup assumes you're running Cemu on your Desktop PC, with your Steam Deck acting as a GamePad for it. It should work for any Cemu host that can support Apollo.
+Inspired by this [question](https://www.reddit.com/r/cemu/comments/1i4s8os/comment/mbz0jo7/), this writeup assumes you're running Cemu on your Desktop PC, with your Steam Deck acting as a GamePad for it. These instructions currently assume a Windows host, and are untested on non-Windows Apollo hosts. If you have a second physical monitor, or a virtual display solution of some sort, you can use these instructions as a baseline for your own solution.
 
 # What's Supported?
 - GamePad Audio on the Steam Deck, and TV Audio on the host.
@@ -109,3 +109,10 @@ If you have not set a static IP address on your Steam Deck, possible it's IP add
 1. Go to Options > Input settings
 2. Under the Controller dropdown, select the DSUController, then click on -.
 3. Perform the [Get your Steam Deck's IP Address](https://github.com/pogisanpolo/SteamDeckAsCemuGamepad?tab=readme-ov-file#get-your-steam-decks-ip-address), and [Set up motion controls steps](https://github.com/pogisanpolo/SteamDeckAsCemuGamepad?tab=readme-ov-file#set-up-motion-controls) again. You shouldn't need to set up the rest of the Moonlight controls again.
+
+## Additional Resources
+Have an unorthodox setup, plan on adapting these instructions to a non-Steam Deck handheld, or can't use Apollo for some reason? These tools act as the basis for the solutions above. These tools are not comprehensive, and other solutions may exist out there.
+
+- [Sunshine.](https://github.com/LizardByte/Sunshine) The one and only, and the base of other streaming services like Duo and Apollo. While lacking certain features of the latter two services, it has the fundamentals needed to support other solutions.
+- [Virtual Display Driver](https://github.com/VirtualDisplay/Virtual-Display-Driver), which is used by [SudoVDA](https://github.com/SudoMaker/SudoVDA), which in turn is used by Apollo, to create virtual displays.
+- Less of a tool, and more of a guide, this [DSU Controller Guide](https://github.com/breeze2/dsu-controller-guides) can help you in setting up motion controls for your setup.
